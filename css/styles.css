@@ -1,0 +1,101 @@
+@import url(//db.onlinewebfonts.com/c/84cb021d5f9af287ffff84b61beef6dc?family=clockicons);
+body {
+  background-color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.stop-watch-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  width: 90%;
+  margin: auto;
+  /*color: orange;
+    */
+  color: black;
+  font-family: clockicons, sans-serif;
+  text-align: center;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.heading {
+  font-family: sans-serif;
+  font-size: 3em;
+}
+.timer {
+  font-size: 5em;
+  margin-bottom: 30px;
+}
+.btn {
+  color: white;
+  border:5px solid black;
+  border-radius:20px;
+  padding: 5px;
+  margin: 5px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+}
+
+.start {
+  background-color: green;
+}
+.stop {
+  background-color: #ff0000;
+}
+.reset {
+  background-color: #1c0c5b;
+}
+.lap {
+  background-color: #801336;
+}
+.lap-reset {
+  background-color: #ff4d00;
+}
+
+.laps-container {
+  list-style-type: none;
+  font-size: 2em;
+}
+@media only screen and (max-width: 350px) {
+  .heading {
+    font-size: 2em;
+  }
+  .timer {
+    font-size: 4em;
+    margin-bottom: 30px;
+  }
+  .btn {
+    color: white;
+    padding: 3px;
+    margin: 3px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 70vw;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 50vw;
+  }
+  .btn{
+      font-size: 1em;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 50vw;
+  }
+  .btn{
+    font-size: 1.3em;
+}
+}
